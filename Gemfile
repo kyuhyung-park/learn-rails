@@ -50,3 +50,10 @@ group :development do
   gem 'quiet_assets'
   gem 'rails_layout'
 end
+
+# for heroku
+# 개발컴에서는 bundle install --without production 로 실행해서 아래 내용 설치 안하도록 한다.
+group :production do
+  gem 'thin'
+end
+
