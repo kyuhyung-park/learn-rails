@@ -10,6 +10,26 @@
   color: white;
   padding: 0 15px; }
 
+// vezi edit
+
+.sidebar {
+  // width:165px;
+  // float: left;
+  background: #748793;
+  padding: 32px 20px;
+  border-right: 1px solid #000;
+}
+.side-nav li a:not(.button) {
+  display: block;
+  color: #000;
+}
+.row {
+  margin: 0;
+}
+.nopadding {
+  padding: 0;
+}
+
 // THESE ARE EXAMPLES YOU CAN MODIFY
 // create mixins using Foundation classes
 @mixin twelve-columns {
@@ -40,7 +60,8 @@
 // to make views framework-neutral
 main {
   @include twelve-columns;
-  background-color: #eee;
+  background-color: #fff;
+  padding: 0;
   }
 section {
   @extend .row;
